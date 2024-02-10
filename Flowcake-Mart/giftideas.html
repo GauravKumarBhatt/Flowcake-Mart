@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- bs icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <title>Hello, world!</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+        :root {
+            --gray: darkcyan;
+        }
+
+        * {
+            font-family: "Lato", sans-serif;
+        }
+
+        h3,
+        h4 {
+            color: black;
+        }
+
+        .card {
+            box-shadow: 0px 0px 12px 0px rgba(73, 73, 73, 0.75);
+            background-color: rgb(255, 255, 255);
+            transition: 0.5s ease;
+
+        }
+
+        .slider_heading {
+            color: rgb(68, 68, 68);
+            padding: 10px 20px;
+        }
+
+        .spacing_top {
+            padding-top: 35px;
+        }
+
+        .slider_heading h3 {
+            margin: 0;
+        }
+
+        .slider_heading p {
+            margin-top: 1rem;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+
+        }
+
+        /* review css start here   */
+        .review_card {
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid rgba(173, 173, 173, 0.384);
+            transition: 0.5s ease;
+        }
+
+        .review_card:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+
+        .top_pannel {
+            border-bottom: 1px solid rgba(173, 173, 173, 0.384);
+        }
+
+        .top_pannel h6 {
+            font-weight: 800;
+        }
+
+        .star_corner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .star_icon .bi {
+            color: chartreuse;
+        }
+
+        .recommended {
+            color: var(--gray);
+        }
+
+        .review_heading p>span {
+            color: var(--gray);
+            ;
+        }
+
+        .review_heading {
+            padding-top: 1rem;
+        }
+
+        .top_pannel h5 {
+            font-weight: 800;
+        }
+
+        .button_loadmore {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .button_loadmore .btn {
+            border: 1px solid gray;
+        }
+
+        .button_review {
+            text-align: center;
+            margin: 3rem 3rem;
+
+        }
+
+        .button_review .btn {
+            border: 1px solid red;
+            color: red;
+            padding: 12px 25px;
+            background-color: transparent;
+        }
+
+        .bi-sort-down {
+            font-size: 2.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .review_heading p {
+            color: white;
+        }
+
+        .name h4,
+        .name p {
+            color: white;
+
+        }
+
+
+        @media (max-width: 575.98px) {
+            .card {
+                background-color: transparent;
+            }
+
+            h4,
+            h3,
+            p {
+                color: white;
+            }
+
+            .img_slider {
+                margin-top: 2rem !important;
+            }
+
+            .navbar-nav>li {
+                display: inline-block!important;
+            }
+
+            .navbar-nav>li>a {
+
+                font-size: 1.2rem!important;
+                padding: 10px;
+            }
+    </style>
+</head>
+
+<body>
+
+   
+
+    /* <!-- / wpf loader Two -->
+    <!-- SCROLL TOP BUTTON --> */
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+    /* <!-- END SCROLL TOP BUTTON --> */
+
+
+    /* <!-- Start header section --> */
+    <header id="aa-header">
+
+        /* <!-- start header bottom  --> */
+        <div class="aa-header-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="aa-header-bottom-area">
+                            <!-- logo  -->
+                            <div class="aa-logo">
+                                <!--============= mobile menu slider for mobile start  ================= -->
+
+                                <!-- =========  mobile menu slider for mobile start  ============= -->
+                                <!-- Text based logo -->
+                                <a href="index.html">
+
+                                    <p style="color: white;">Lorem<strong>Mart</p>
+                                </a>
+                                <!-- img based logo -->
+                                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                            </div>
+                            <!-- / logo  -->
+                            <!-- cart box -->
+
+
+                            <span class="hide_icon_mobile">
+
+                                <!-- <div class="aa-cartbox ">
+                     <a class="aa-cart-link" href="#">
+                       <span class="fa fa-home"></span>
+                       <span class="aa-cart-title">More</span>
+                     </a>
+                    </div> -->
+                                <!-- dropdown right last   -->
+                                <div class="mobile_view_menu">
+                                    <div class="dropdown aa-cartbox ">
+                                        <a class="aa-cart-link dropdown-toggle" href="#" type="button"
+                                            data-toggle="dropdown">
+                                            <span class="bi bi-justify-right"></span>
+                                            <span class="aa-cart-title">More</span>
+                                        </a>
+                                        <ul class="dropdown-menu menu_dropdown">
+                                            <li><a href="signup.html"> <i class="bi bi-person-circle"></i> Sign up</a>
+                                            </li>
+                                            <li><a href="signin.html"> <i class="bi bi-box-arrow-in-right"></i>
+                                                    Login</a></li>
+                                            <li><a href="traning.html"><i class="bi bi-bag-check-fill"></i> My Order</a>
+                                            </li>
+                                            <li><a href="trackorder.html"><i class="bi bi-geo-alt-fill"></i> Track
+                                                    Order</a></li>
+                                            <li><a href="traning.html"> <i class="bi bi-journal-bookmark-fill"></i>
+                                                    Address Book</a></li>
+                                            <li><a href="traning.html"> <i class="bi bi-gift-fill""></i> Gift Voucher</a></li>
+                        <li><a href=" traning.html"> <i class="bi bi-info-circle-fill"></i> Help </a></li>
+                                            <li><a href="traning.html"> <i class="bi bi-people-fill"></i> Support</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- dropdown right end   -->
+                                    <div class="aa-cartbox ">
+                                        <a class="aa-cart-link" href="signin.html" target="_blank">
+                                            <span class="fa fa-user"></span>
+                                            <span class="aa-cart-title">Signin</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="aa-cartbox hide_card">
+                      <a class="aa-cart-link" href="cart.html">
+                        <span class="fa fa-location-arrow"></span>
+                        <span class="aa-cart-title">  CART </a></span>
+                      </a>
+                    </div> -->
+                                <div class="aa-cartbox hide_card">
+                                    <a class="aa-cart-link" href="trackorder.html" target="_blank">
+                                        <span class="fa fa-truck"></span>
+                                        <span class="aa-cart-title">Track Order</span>
+                                    </a>
+                                </div>
+
+                                <div class="aa-cartbox hide_card">
+                                    <a class="aa-cart-link" href="cart.html" target="_blank">
+                                        <span class="fa fa-shopping-basket"></span>
+                                        <span class="aa-cart-title"> CART</span>
+                                        <span class="aa-cart-notify">2</span>
+                                    </a>
+                                    <div class="aa-cartbox-summary">
+                                        <ul>
+                                            <li>
+                                                <a class="aa-cartbox-img" href="#"><img src="img/home/1.jpg"
+                                                        alt="img"></a>
+                                                <div class="aa-cartbox-info">
+                                                    <h4><a href="#">Product Name</a></h4>
+                                                    <p>1 x $250</p>
+                                                </div>
+                                                <a class="aa-remove-product" href="#"><span
+                                                        class="fa fa-times"></span></a>
+                                            </li>
+                                            <li>
+                                                <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg"
+                                                        alt="img"></a>
+                                                <div class="aa-cartbox-info">
+                                                    <h4><a href="#">Product Name</a></h4>
+                                                    <p>1 x $250</p>
+                                                </div>
+                                                <a class="aa-remove-product" href="#"><span
+                                                        class="fa fa-times"></span></a>
+                                            </li>
+                                            <li>
+                                                <span class="aa-cartbox-total-title">
+                                                    Total
+                                                </span>
+                                                <span class="aa-cartbox-total-price">
+                                                    $500
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
+                                    </div>
+                                </div>
+
+                            </span>
+                            <!-- / cart box -->
+                            <div class="aa-search-box">
+                                <form action="">
+                                    <input type="text" name="" id="" placeholder="Search here ">
+                                    <button type="submit"><span class="fa fa-map-marker"
+                                            style="color:black;"></span></button>
+                                </form>
+                            </div>
+                            <!-- search box -->
+                            <div class="aa-search-box">
+                                <form action="" style="display: flex;">
+                                    <select style="width: 65px; border: none;background-color: #DADADA;">
+                                        <option>All</option>
+                                        <option>Cakes</option>
+                                        <option>Chocolates</option>
+                                        <option>Sweets</option>
+                                        <option>Candy</option>
+                                        <option>Snacks</option>
+                                        <option>Flowers</option>
+                                        <option>Events</option>
+                                        <option>Ice Cream</option>
+                                        <option>Namkeens</option>
+                                        <option>Combo</option>
+                                    </select>
+                                    <input type="text" name="" id="" placeholder="Choose Delevery City "
+                                        data-toggle="modal" data-target="#chooseModal">
+                                    <button type="submit"><span class="fa fa-search"
+                                            style="color: black;"></span></button>
+
+                                </form>
+                            </div>
+                            <!-- / search box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / header bottom  -->
+    </header>
+    <!-- / header section -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="chooseModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://images.pexels.com/photos/2106037/pexels-photo-2106037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                    alt="">
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="col">
+                                    <h1 style="color: #000;">Check Available Gifts</h1>
+                                    <p>Simply by selecting the delivery city</p>
+                                </div>
+
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control " placeholder="Search"
+                                            style="padding: 25px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit" style="padding: 15px;">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="container">
+                                    <div class="row" style="clear: both;">
+                                        <div class="col-sm-2 col-md-3 col-lg-1">
+                                            <p>Noida</p>
+                                        </div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Delhi</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Gurgoan</p>
+                                        </div>
+                                        <div class="clearfix visible-md-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Pune</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Pune</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Pune</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                    </div>
+
+                                    <div class="row" style="clear: both;">
+                                        <div class="col-sm-2 col-md-3 col-lg-1">
+                                            <p>Noida</p>
+                                        </div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Delhi</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Gurgoan</p>
+                                        </div>
+                                        <div class="clearfix visible-md-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Pune</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Pune</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <div class="col-sm-2 col-md-2 col-lg-1">
+                                            <p>Pune</p>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar menu start  -->
+    <nav class="navbar" id="navbar" style="background-color: rgb(61 64 73); clear: both;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-header center_in_mobile">
+                        <a class="navbar-brand " style="color: white;" href="#" onclick="openNav()"><i
+                                class="bi bi-list-ul"></i>
+                            All</a>
+                        <div id="mySidepanel" class="sidepanel">
+
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                                    class="bi bi-x-circle"></i></a>
+                            <a href="traning.html" target="_blank" class="heading">Tranding</a>
+                            <a href="traning.html" target="_blank" class="Pera"> Clients </a>
+                            <a href="traning.html" target="_blank" class="Pera">Services</a>
+                            <a href="traning.html" target="_blank" class="Pera">Settings</a>
+                            <a href="traning.html" target="_blank" class="Pera">About us</a>
+                            <a href="traning.html" target="_blank" class="Pera">Language</a>
+                            <a href="traning.html" target="_blank" class="Pera">Contact us</a>
+                            <a href="traning.html" target="_blank" class="Pera">About</a>
+
+
+                        </div>
+
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Express Delivery
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-lg-6 col-sm-4 col-xs-6">
+                                <ul>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-lg-6 col-sm-4 col-xs-6">
+                                <ul>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cakes
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-lg-6 col-xs-6">
+                                <ul>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-lg-6 col-xs-6">
+                                <ul>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flowers
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-lg-6 col-xs-6">
+                                <ul>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-lg-6 col-xs-6">
+                                <ul>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                    <li><a href="traning.html" target="_balck">lorem</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Combos
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gifts
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Anniversary
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Birthday
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Internation
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                            <li><a href="traning.html" target="_balck">lorem</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- / menu -->
+    <!-- / menu -->
+
+    /* <!-- ============================================================== -->s */
+
+    <section>
+
+        <nav class="navbar ">
+            <div class="container-fluid">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="bi bi-sort-down"></i></a></li>
+                    <li><a href="#">Sort by: <span class="Popularity"> Popularity </span></a></li>
+
+                    <li><a href="#"></span> Low to High</a></li>
+                    <li><a href="#"></span> High to Low</a></li>
+                </ul>
+            </div>
+        </nav>
+        /* <!-- grid slider   --> */
+
+        /* <!-- image grid start here --> */
+        <section class="image_small_box">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    /* <!-- 2nd slider start here --> */
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    /* <!-- 3rd slider start  --> */
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    /* <!-- 4th slider  --> */
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel4" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel4" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel4" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    /* <!-- 5th slider  --> */
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel5" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel5" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel5" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel5" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    /* <!-- 6th slider  --> */
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel6" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel6" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel6" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel6" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    /* <!-- 7th slider  --> */
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel7" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel7" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel7" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel7" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel7" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    /* <!-- 8th slider  --> */
+                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                        <div class="card">
+                            <div class="img_slider">
+                                <div id="myCarousel8" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel8" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel8" data-slide-to="2"></li>
+                                    </ol>
+
+                                    /* <!-- Wrapper for slides --> */
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                alt="Los Angeles">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel8" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel8" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="slider_heading">
+                                <h4>Groot plant</h4>
+                                <h3>Rs 1099</h3>
+                                <p>Ealiest Delivery: Today</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="button_loadmore" style="text-align: center;">
+                <button class="btn"> Load More..</button>
+            </div>
+
+
+            /* <!-- image grid end here -->
+
+            <!-- image starting here --> */
+            <section class="">
+                <div class="container-fluid">
+                    <div class="review">
+                        <div class="review_main_heading">
+                            <h2>Review & Ratings for Best Seller All</h2>
+                        </div>
+
+                        <div class="col-section">
+                            <div class="main">
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                                        <div class="review_card">
+                                            <div class="top_pannel">
+                                                <h5>Prefect</h5>
+
+                                                <div class="star_corner">
+                                                    <div class="star_icon">
+                                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                    <div class="recommended">
+                                                        <p>recommended</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <p>Prefect</p>
+                                                
+                                            </div>
+                                            <div class="review_heading">
+                                                <p><span>Product: </span>purple orchild bouquet</p>
+                                                <p> <span>Occasion:</span> Birthday</p>
+                                                <p> <span>Date: </span> 19th nov 2020</p>
+                                            </div>
+                                            <div class="name">
+                                                <h4>anumpan</h4>
+                                                <p>location</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- 2nd  -->
+                                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                                        <div class="review_card">
+                                            <div class="top_pannel">
+                                                <h5>Prefect</h5>
+
+                                                <div class="star_corner">
+                                                    <div class="star_icon">
+                                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                    <div class="recommended">
+                                                        <p>recommended</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <p>Prefect</p>
+                                                
+                                            </div>
+                                            <div class="review_heading">
+                                                <p><span>Product: </span>purple orchild bouquet</p>
+                                                <p> <span>Occasion:</span> Birthday</p>
+                                                <p> <span>Date: </span> 19th nov 2020</p>
+                                            </div>
+                                            <div class="name">
+                                                <h4>anumpan</h4>
+                                                <p>location</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 3rd seciton -->
+                                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                                        <div class="review_card">
+                                            <div class="top_pannel">
+                                                <h5>Prefect</h5>
+
+                                                <div class="star_corner">
+                                                    <div class="star_icon">
+                                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                    <div class="recommended">
+                                                        <p>recommended</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <p>Prefect</p>
+                                                
+                                            </div>
+                                            <div class="review_heading">
+                                                <p><span>Product: </span>purple orchild bouquet</p>
+                                                <p> <span>Occasion:</span> Birthday</p>
+                                                <p> <span>Date: </span> 19th nov 2020</p>
+                                            </div>
+                                            <div class="name">
+                                                <h4>anumpan</h4>
+                                                <p>location</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- 4th section -->
+                                    <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                                        <div class="review_card">
+                                            <div class="top_pannel">
+                                                <h5>Prefect</h5>
+
+                                                <div class="star_corner">
+                                                    <div class="star_icon">
+                                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                    <div class="recommended">
+                                                        <p>recommended</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <p>Prefect</p>
+                                               
+                                            </div>
+                                            <div class="review_heading">
+                                                <p><span>Product: </span>purple orchild bouquet</p>
+                                                <p> <span>Occasion:</span> Birthday</p>
+                                                <p> <span>Date: </span> 19th nov 2020</p>
+                                            </div>
+                                            <div class="name">
+                                                <h4>anumpan</h4>
+                                                <p>location</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- col end   -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="button_review">
+                    <button class="btn"> Load More..</button>
+                </div>
+
+            </section>
+
+            /* <!-- image starting here --> */
+
+
+
+
+        </section>
+       
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+
+        <script src="js/custom.js"></script>
+        <script>
+    	/* // disable right click to inspect */
+      document.addEventListener('contextmenu', event => event.preventDefault());own.innerHTML = "Right click disabled on image";
+  </script>
+</body>
+
+</html>

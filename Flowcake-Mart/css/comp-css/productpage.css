@@ -1,0 +1,259 @@
+/* left site css */
+#product_page{
+margin-top: 2rem;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 2px 50px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border:none;
+}
+.list-group-item > h3{
+    color: #000;
+    font-weight: 800;
+}
+
+/* 2nd header start code here   */
+
+.Miniheader {
+    width: 100%;
+    height: 30px;
+    background-color: #eaeded;
+    border-bottom: 1px solid #ccc;
+}
+
+.bi-star-fill{
+    color: rgb(255, 153, 0);
+}
+
+
+
+/* 2nd header start code here   */
+.text-more p{
+    font-weight: 800;
+    color: cornflowerblue;
+}
+.checkbox, .radio {
+   
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* ===================== right side code here  ========================*/
+.inner-listing .breadcrumb li a {
+    color: rgb(0, 0, 0);
+}
+h3{
+    color: #000;
+}
+.bg-white{
+    background-color: #fff;
+}
+
+.product-img-box{
+    padding: 15px;
+    position: relative;
+}
+
+.product-title-name h3{
+    color: #fff;
+    font-weight: 800;
+}
+
+.product-plus-icon{
+    background: white;
+    border: 1px solid lightgray;
+    padding: 0px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 33%;
+    right: 2rem;
+    color: black;
+    box-shadow: 0px 11px 16px -4px rgba(0,0,0,0.75);
+}
+
+.product-plus-icon i{
+    font-size: 2rem;
+}
+
+
+.modal-content{
+    background-color: #fff!important;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom:none;
+}
+.modal-footer {
+  
+    border-top:none;
+}
+
+.modal-image img{
+width: 100%;
+object-fit: contain;
+height: 200px;
+}
+.cake-pera-modal{
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.heading > p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 2px;
+    margin-bottom: 2px !important;
+}
+
+.heading span{
+    color: gray;
+}
+.model-extra-content p{
+    color: black;
+    font-weight: bold;
+}
+.addToCard-modal{
+   background-color: red;
+   border-radius: 20px;
+   padding: 7px 20px;
+   color: #fff;
+   transition: 0.5s;
+}
+.addToCard-modal:hover{
+    background-color: rgb(161, 12, 12);
+
+    color: #fff;
+ }
+.count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.count input{
+    border: none;
+    text-align: center;
+}
+
+/* ===================== */
+.catBigImag_container > img {
+    width: 100%;
+    object-fit: contain;
+    height: 220px;
+}
+.catProdtName_container {
+    padding: 12px 0px;
+}
+.catProdtName_container > p {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.catProdtName_container > span,a,.CatLocatioN {
+    color: rgb(255, 255, 255);
+
+}
+.fa-star{
+color: rgb(214, 165, 5);
+}
+
+.catOffEr > span {
+    position: absolute;
+    top: 23px;
+    font-size: 20px;
+    color: white;
+    left: 42px;
+    background: #202739;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px;
+}
+.catOffEr {
+    border: 1px solid white;
+    padding: 15px;
+    margin: 38px 28px;
+}
+.catOffEr a span{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.ProductSearchcheck {
+    width: 500px;
+    /* z-index: 1100; */
+    display: flex;
+    /* padding-left: 372px; */
+    left: 390px;
+    position: relative;
+    bottom: 30px;
+    /* background-color: red; */
+}
+
+.DeliveryTime {
+    margin: 20px 0;
+   
+}
+.DeliveryTime > ul {
+    display: flex;
+    max-width: 350px;
+    padding-left: 0;
+}
+.DeliveryTime > ul > li {
+    color: white;
+    border-right: 1px solid gray;
+}
+.raTingSec {
+    padding: 10px 14px 10px 10px;
+}
+.raTingSec p:nth-child(1) {
+    color: white;
+    font-size: 16px;
+}
+
+.bi-bag-check-fill{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.raTingSec p {
+    margin-bottom: 0;
+    color: gray;
+    text-align: left;
+    font-size: 12px;
+}
+.content-Super {
+    background: #fff;
+    width: 230px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-right: 20px;
+}
+
+.content-Super input:focus{
+    border: none;
+}
+.checkveg {
+    padding: 2px 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.FavIconsCat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+    margin-left: 20px;
+    padding: 2px 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Shop | Product Detail</title>
+
+  <!-- Font awesome -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+  <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+  <!-- Product view slider -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!-- price picker slider -->
+  <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+  <!-- Theme color -->
+  <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+  <!-- Top Slider CSS -->
+  <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+
+  <!-- Main style sheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/comp-css/product-detail.css">
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+
+
+  <style>
+    :root {
+            --gray: darkcyan;
+            --mainColor: #ffffff;
+            --bg: #243b55;
+            --red-color:#f8165c;
+            --card-bg-color:azure;
+        }
+    .xzoom-gallery {
+      margin-top: 10px
+    }
+
+    .xzoom {
+      margin-top: 40px
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: var(--mainColor);
+    }
+
+    /* right side css start here */
+    .simpleLens-thumbnail-wrapper {
+      width: 100%;
+    }
+
+    .aa-product-view-price {
+      font-size: 2.6rem;
+      color: white;
+      font-weight: 800;
+    }
+
+    .aa-product-cut-price {
+      color: white;
+    }
+
+    .aa-product-price-offer {
+      color: red;
+    }
+
+    .price-show-offer {
+      display: flex;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- wpf loader Two -->
+  <div id="wpf-loader-two">
+    <div class="wpf-loader-two-inner">
+      <span>Loading</span>
+    </div>
+  </div>
+  <!-- / wpf loader Two -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+<!-- navbar starrt   -->
+
+<nav class="navbar" id="navbar" style="background-color: rgb(61 64 73); clear: both;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="navbar-header center_in_mobile">
+          <a class="navbar-brand " style="color: white;" href="#" onclick="openNav()"><i class="bi bi-list-ul"></i>
+            All</a>
+          <div id="mySidepanel" class="sidepanel">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi bi-x-circle"></i></a>
+            <a href="listpage.html" target="_blank" class="heading">listpage.html</a>
+            <a href="listpage.html" target="_blank" class="Pera"> Clients </a>
+            <a href="listpage.html" target="_blank" class="Pera">Services</a>
+            <a href="listpage.html" target="_blank" class="Pera">Settings</a>
+            <a href="listpage.html" target="_blank" class="Pera">About us</a>
+            <a href="listpage.html" target="_blank" class="Pera">Language</a>
+            <a href="listpage.html" target="_blank" class="Pera">Contact us</a>
+            <a href="listpage.html" target="_blank" class="Pera">About</a>
+
+
+          </div>
+
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Best Selling
+          </a>
+          <ul class="dropdown-menu Express-dropdown row">
+            <li class="col-lg-12 col-sm-12 col-xs-12">
+              <ul>
+                <li class="dropdown-main_heading">Same Day Delivery</li>
+                <li><a href="./components/cake.html" target="_balck">Cakes</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Flowers</a></li>
+                <li><a href="./components/plants.html" target="_balck">Plants</a></li>
+                <li><a href="./components/combo.html  " target="_balck">Combos</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+
+        </li>
+        <!-- =========================== cake drop down  ================================== -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Christmas
+          </a>
+          <ul class="dropdown-menu cake-dropdown row">
+            <li class="col-lg-2 col-xs-4 col-md-2">
+              <ul>
+                <li class="dropdown-main_heading">By Type</li>
+                <li><a href="./components/cake.html" target="_balck">All Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Delicious Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Designer Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Photo Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Eggless Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Jar Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">5 Star Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Heart Shaped Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Cartoon Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Vegan Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Half Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Pull Me Up Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Pinata Cakes</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4 col-md-2">
+              <ul>
+                <li class="dropdown-main_heading">By Flavour</li>
+                <li><a href="./components/cake.html" target="_balck">Balck Forest</a></li>
+                <li><a href="./components/cake.html" target="_balck">Butterscotch</a></li>
+                <li><a href="./components/cake.html" target="_balck">Chocolate Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Fruit Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Pineapple</a></li>
+                <li><a href="./components/cake.html" target="_balck">Red Velvet</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Coffee Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Strawberry </a></li>
+                <li><a href="./components/cake.html" target="_balck"> KitKat Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Vanilla </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Ferrero Rocher </a></li>
+
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-xs-4 col-md-2">
+              <ul>
+                <li class="dropdown-main_heading">By Theme</li>
+                <li><a href="listpage.html" target="_balck">Spiderman</a></li>
+                <li><a href="listpage.html" target="_balck">Baby Shower</a></li>
+                <li><a href="listpage.html" target="_balck"> Barbie </a></li>
+                <li><a href="listpage.html" target="_balck">car</a></li>
+                <li><a href="listpage.html" target="_balck">Cartoon</a></li>
+                <li><a href="listpage.html" target="_balck"> Chota Bheem</a></li>
+                <li><a href="listpage.html" target="_balck"> Mickey Mouse </a></li>
+                <li><a href="listpage.html" target="_balck"> Minion </a></li>
+                <li><a href="listpage.html" target="_balck"> Princess </a></li>
+                <li><a href="listpage.html" target="_balck"> Pubg Cakes </a></li>
+
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-xs-4 col-md-2">
+              <ul>
+                <li class="dropdown-main_heading">By Recipient</li>
+                <li><a href="listpage.html" target="_balck">Him</a></li>
+                <li><a href="listpage.html" target="_balck">her</a></li>
+                <li><a href="listpage.html" target="_balck"> Kids </a></li>
+                <li><a href="listpage.html" target="_balck">Farther</a></li>
+                <li><a href="listpage.html" target="_balck">Mother</a></li>
+                <li><a href="listpage.html" target="_balck"> Brother</a></li>
+                <li><a href="listpage.html" target="_balck"> sister </a></li>
+                <li><a href="listpage.html" target="_balck"> Husband </a></li>
+                <li><a href="listpage.html" target="_balck"> Wife </a></li>
+                <li><a href="listpage.html" target="_balck"> Girlfriend </a></li>
+                <li><a href="listpage.html" target="_balck"> Boyfriend </a></li>
+                <li><a href="listpage.html" target="_balck"> Friend </a></li>
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-xs-4 col-md-2">
+              <ul>
+                <li class="dropdown-main_heading">By Occasion</li>
+                <li><a href="./components/birthday.html" target="_balck">Birthday</a></li>
+                <li><a href="./components/anniversary.html" target="_balck">Anniversary</a></li>
+                <li><a href="listpage.html" target="_balck"> Valentine's Day </a></li>
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-xs-4 col-md-2">
+              <ul>
+                <li class="dropdown-main_heading">Cake Cities</li>
+                <li><a href="listpage.html" target="_balck">Bangalore</a></li>
+                <li><a href="listpage.html" target="_balck">Chennai</a></li>
+                <li><a href="listpage.html" target="_balck"> Delhi </a></li>
+                <li><a href="listpage.html" target="_balck"> Gurgaon </a></li>
+                <li><a href="listpage.html" target="_balck"> Hyderabad </a></li>
+                <li><a href="listpage.html" target="_balck"> Kolkata </a></li>
+                <li><a href="listpage.html" target="_balck"> Mumbai </a></li>
+                <li><a href="listpage.html" target="_balck"> Pune </a></li>
+                <li><a href="listpage.html" target="_balck"> All 40+ Cities </a></li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </li>
+        <!-- =========================== cake drop down end ================================== -->
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cakes
+          </a>
+          <ul class="dropdown-menu flowers_dropdown megamenu row">
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Type</li>
+                <li><a href="./components/cake.html" target="_balck">All Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Delicious Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Designer Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Photo Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Edggless Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Jar Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> CakesCup Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">5 star Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Heart Shapes Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Cartook Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Vegan Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Pull Me Up Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Pinata Cakes</a></li>
+
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Flavour</li>
+                <li><a href="./components/cake.html" target="_balck">All Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Best Selling </a></li>
+                <li><a href="./components/cake.html" target="_balck">Oreo Cake </a></li>
+                <li><a href="./components/cake.html" target="_balck">Walnut</a></li>
+                <li><a href="./components/cake.html" target="_balck">Rasmalai</a></li>
+                <li><a href="./components/cake.html" target="_balck">Kit Kat Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Gulab Jamun Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck">Vanilla Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Gem Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">  Death by Choco</a></li>
+                <li><a href="./components/cake.html" target="_balck">Triple Queen </a></li>
+                <li><a href="./components/cake.html" target="_balck">Choco Chip</a></li>
+                <li><a href="./components/cake.html" target="_balck">Mixed Fruit</a></li>
+                <li><a href="./components/cake.html" target="_balck">Rocky Road </a></li>
+                <li><a href="./components/cake.html" target="_balck">Ferrero Rocher</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Black Currant </a></li>
+                <li><a href="./components/cake.html" target="_balck">Honey Almond</a></li>
+                <li><a href="./components/cake.html" target="_balck">Chocolate Truffle</a></li>
+                <li><a href="./components/cake.html" target="_balck">Caramel</a></li>
+                <li><a href="./components/cake.html" target="_balck">White Forest</a></li>
+                <li><a href="./components/cake.html" target="_balck">Mango</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Exotic cakes</a></li>
+
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul class="scroll" >
+                <li class="dropdown-main_heading">By Theme</li>
+                <li><a href="./components/cake.html" target="_balck"> All Theme Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Cakes For Him</a></li>
+                <li><a href="./components/cake.html" target="_balck">Cakes For Her</a></li>
+                <li><a href="./components/cake.html" target="_balck">First Birthday Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Cakes For Parents</a></li>
+                <li><a href="./components/cake.html" target="_balck">Baby Shower/Christening</a></li>
+                <li><a href="./components/cake.html" target="_balck">Cartoon/ Fairy Tales</a></li>
+                <li><a href="./components/cake.html" target="_balck">Travel Cakes  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Bikes & Cars</a></li>
+                <li><a href="./components/cake.html" target="_balck">Sports Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Engineering Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">By Profession</a></li>
+                <li><a href="./components/cake.html" target="_balck">Cakes For Baby Girl </a></li>
+                <li><a href="./components/cake.html" target="_balck">Cakes For Baby Boy</a></li>
+                <li><a href="./components/cake.html" target="_balck">Music/ Instruments</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Animal & Jungle Theme</a></li>
+                <li><a href="./components/cake.html" target="_balck">Love/ Romantic Cakes    </a></li>
+                <li><a href="./components/cake.html" target="_balck">Barbie Doll Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Minion Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Mickey Mouse Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Doctor Theme</a></li>
+                <li><a href="./components/cake.html" target="_balck">Fashion Theme</a></li>
+                <li><a href="./components/cake.html" target="_balck">Bachelor Party Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck">Shopping Theme  Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Smoke/ Booze</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Work / Hobbies </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Festival Theme Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Fitness/Gym  Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Gadget Theme</a></li>
+                <li><a href="./components/cake.html" target="_balck">Flower Theme</a></li>
+                <li><a href="./components/cake.html" target="_balck">Frozen Theme Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Disney Theme Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Number Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Spiderman/ Batman</a></li>
+                <li><a href="./components/cake.html" target="_balck">Baptism/Holy Communion</a></li>
+                <li><a href="./components/cake.html" target="_balck">Unicorn Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Makeup Theme Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Adult Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">SuperHero / Books </a></li>
+                <li><a href="./components/cake.html" target="_balck">Farewell Cakes  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Graduation Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Game Theme</a></li>
+                <li><a href="./components/cake.html" target="_balck">Pubg Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck">Aeroplane Theme  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Sea Theme Cake </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Cocomelon Cakes  </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Little Man/Baby Boss  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Smiley /Emoji Cakes  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Photography Theme</a></li>
+                <li><a href="./components/cake.html" target="_balck">Wedding / Anniversary</a></li>
+                <li><a href="./components/cake.html" target="_balck">Selfie Theme Cakes</a></li>
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Combo</li>
+                <li><a href="./components/cake.html" target="_balck">All Cakes Combo</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Flowers & Cakes</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Flowers & chocolates</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Flowers & Teddy</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Flowers & Sweets</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Cakes & Teddy</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Cake with Greting Card</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Chocolate Bouquet</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Gift Hampers</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Occasion</li>
+                <li><a href="listpage.html" target="_balck">All Cakes</a></li>
+                <li><a href="listpage.html" target="_balck">Boss Day- 16 Oct</a></li>
+                <li><a href="listpage.html" target="_balck">Children's Day-14 Nov</a></li>
+                <li><a href="listpage.html" target="_balck"> New Year 1st Jan</a></li>
+                <li><a href="listpage.html" target="_balck">Valentine's Day 14th Feb</a></li>
+                <li><a href="listpage.html" target="_balck"> Women's Day 08-Mar</a></li>
+                <li><a href="listpage.html" target="_balck">Mother's Day 08-May</a></li>
+                <li><a href="listpage.html" target="_balck"> Father's Day 19th june</a></li>
+                <li><a href="listpage.html" target="_balck"> Parents Day 24th July</a></li>
+                <li><a href="listpage.html" target="_balck"> Frinendship Day 7th Aug</a></li>
+                <li><a href="listpage.html" target="_balck"> Teacher's Day 25-sep</a></li>
+                <li><a href="listpage.html" target="_balck"> Grandparent Day 11th Sep</a></li>
+                <li><a href="listpage.html" target="_balck"> Daughter's Day 25th Sep</a></li>
+
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Cake Cities</li>
+                <li><a href="listpage.html" target="_balck">Bangalore</a></li>
+                <li><a href="listpage.html" target="_balck">Chennai</a></li>
+                <li><a href="listpage.html" target="_balck">Delhi</a></li>
+                <li><a href="listpage.html" target="_balck">Gurgoan</a></li>
+                <li><a href="listpage.html" target="_balck">Hyderabad</a></li>
+                <li><a href="listpage.html" target="_balck">Kolkata</a></li>
+                <li><a href="listpage.html" target="_balck">Mumbai</a></li>
+                <li><a href="listpage.html" target="_balck">Pune</a></li>
+                <li><a href="listpage.html" target="_balck">All 400+ Cities</a></li>
+              </ul>
+            </li>
+
+        
+            <!-- ============================================================================ -->
+            <li class="col-lg-2 col-xs-4 ">
+              <ul class="scroll">
+                <li class="dropdown-main_heading">By Type</li>
+                <li><a href="./components/cake.html" target="_balck">Wedding Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck">Engagement Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck">Anniversary</a></li>
+                <li><a href="./components/cake.html" target="_balck">Tier Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck">Fondant Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Customised Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Drip cake</a></li>
+                <li><a href="./components/cake.html" target="_balck"> plum cake /Sponge</a></li>
+                <li><a href="./components/cake.html" target="_balck">Ice Cream Cake </a></li>
+                <li><a href="./components/cake.html" target="_balck">Sugar Free Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck"> Drip cake  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Cheese cake </a></li>
+                <li><a href="./components/cake.html" target="_balck">Pastries  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Rainbow Cakes </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Bomb cake </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Brownies  </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Macaroons  </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Donuts </a></li>
+                <li><a href="./components/cake.html" target="_balck"> Cookies  </a></li>
+                <li><a href="./components/cake.html" target="_balck">Fusion Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck">Premium Cake</a></li>
+                <li><a href="./components/cake.html" target="_balck">Exotic Cakes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ==================combos dropdown start here==============   -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Food
+          </a>
+          <ul class="dropdown-menu food_dropdown  row">
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Price</li>
+                <li><a href="listpage.html" target="_balck">Under 600</a></li>
+                <li><a href="listpage.html" target="_balck">600 To 999</a></li>
+                <li><a href="listpage.html" target="_balck">100 To 1999 </a></li>
+                <li><a href="listpage.html" target="_balck">Above 1000</a></li>
+                <li><a href="listpage.html" target="_balck">Combo Best Seller</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul class="scroll">
+                <li class="dropdown-main_heading">Free Combos</li>
+                <li><a href="listpage.html" target="_balck"> All Food </a></li>
+                <li><a href="listpage.html" target="_balck"> Delicious Food</a></li>
+                <li><a href="listpage.html" target="_balck">Best Selling</a></li>
+                <li><a href="listpage.html" target="_balck">Biryani</a></li>
+                <li><a href="listpage.html" target="_balck">Starters</a></li>
+                <li><a href="listpage.html" target="_balck">Pizza</a></li>
+                <li><a href="listpage.html" target="_balck">Bread Indian</a></li>
+                <li><a href="listpage.html" target="_balck">Burgers</a></li>
+                <li><a href="listpage.html" target="_balck">Deserts</a></li>
+                <li><a href="listpage.html" target="_balck">Sides & Drinks</a></li>
+                <li><a href="listpage.html" target="_balck">Curry</a></li>
+                <li><a href="listpage.html" target="_balck">Chat</a></li>
+                <li><a href="listpage.html" target="_balck">Snacks</a></li>
+                <li><a href="listpage.html" target="_balck">Sandwiches</a></li>
+                <li><a href="listpage.html" target="_balck">Fries</a></li>
+                <li><a href="listpage.html" target="_balck">Momos</a></li>
+                <li><a href="listpage.html" target="_balck">Salad</a></li>
+                <li><a href="listpage.html" target="_balck">Vegan</a></li>
+                <li><a href="listpage.html" target="_balck">Barbecue</a></li>
+                <li><a href="listpage.html" target="_balck"> Fast Food Chinese</a></li>
+                <li><a href="listpage.html" target="_balck">Home Made Food</a></li>
+                <li><a href="listpage.html" target="_balck">Pastas</a></li>
+                <li><a href="listpage.html" target="_balck">Street Food</a></li>
+                <li><a href="listpage.html" target="_balck">Tandoori</a></li>
+                <li><a href="listpage.html" target="_balck">Grill</a></li>
+                <li><a href="listpage.html" target="_balck">Combo</a></li>
+                <li><a href="listpage.html" target="_balck">Juice</a></li>
+                <li><a href="listpage.html" target="_balck">Indian Food</a></li>
+                <li><a href="listpage.html" target="_balck">Sea Food</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Cakes Combos</li>
+                <li><a href="listpage.html" target="_balck">All Cake Combles</a></li>
+                <li><a href="./components/cake.html" target="_balck">Cakes & Teddy</a></li>
+                <li><a href="listpage.html" target="_balck">Cakes with Guitarist</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Flowers & Greeting Cards</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Exclusive Combos</li>
+                <li><a href="listpage.html" target="_balck">All Combos</a></li>
+                <li><a href="./components/chocolates.html" target="_balck">Chocolate Bouquet</a></li>
+                <li><a href="listpage.html" target="_balck">Ballon Bouquet</a></li>
+                <li><a href="listpage.html" target="_balck">Personalised Gift Combos</a></li>
+                <li><a href="listpage.html" target="_balck">Gift Hampers</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Brands</li>
+                <li><a href="./components/plants.html" target="_balck">All Brands </a></li>
+                <li><a href="./components/plants.html" target="_balck">Anand Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Kanthi Sweets</a></li>              
+                <li><a href="./components/plants.html" target="_balck">K.C Das</a></li>
+                <li><a href="./components/plants.html" target="_balck">Selvi Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Amrutha Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Dharwad Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Aishwarya Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">  Karthik Mitai</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Sweet Moments</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Sri Krishna Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Calcutta Sweets</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Cakes Combos</li>
+                <li><a href="./components/anniversary.html" target="_balck">Anniversary Combos</a></li>
+                <li><a href="./components/birthday.html" target="_balck">Birthday Combos</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- ==================combos dropdown start here==============   -->
+        <!-- gift dropdown start -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flowers
+          </a>
+          <ul class="dropdown-menu Combos_dropdown  row">
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Price</li>
+                <li><a href="listpage.html" target="_balck">Under 299</a></li>
+                <li><a href="listpage.html" target="_balck">Under 6000</a></li>
+                <li><a href="listpage.html" target="_balck">600 To 999</a></li>
+                <li><a href="listpage.html" target="_balck">1000 To 1999 </a></li>
+                <li><a href="listpage.html" target="_balck">Above 2000</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Type</li>
+                <li><a href="listpage.html" target="_balck"> All Gifts</a></li>
+                <li><a href="listpage.html" target="_balck"> Personalised Gifts </a></li>
+                <li><a href="listpage.html" target="_balck"> same Day Personalised </a></li>
+                <li><a href="listpage.html" target="_balck">Soft Toys</a></li>
+                <li><a href="listpage.html" target="_balck"> Mugs </a></li>
+                <li><a href="listpage.html" target="_balck"> Chocolates</a></li>
+                <li><a href="listpage.html" target="_balck"> Sweets</a></li>
+                <li><a href="listpage.html" target="_balck"> Spiritul Gifts</a></li>
+                <li><a href="listpage.html" target="_balck"> Cushions</a></li>
+                <li><a href="listpage.html" target="_balck"> Jewellery</a></li>
+                <li><a href="listpage.html" target="_balck"> Greeting Cards</a></li>
+                <li><a href="listpage.html" target="_balck"> Accessories</a></li>
+                <li><a href="listpage.html" target="_balck"> Perfumes</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">More Gifts</li>
+                <li><a href="listpage.html" target="_balck">Hampers</a></li>
+                <li><a href="listpage.html" target="_balck"> Explosion Box </a></li>
+                <li><a href="listpage.html" target="_balck"> Stationery Gifts </a></li>
+                <li><a href="listpage.html" target="_balck">Showpieces</a></li>
+                <li><a href="listpage.html" target="_balck"> Unique Gifts </a></li>
+                <li><a href="listpage.html" target="_balck"> Travel Accessories</a></li>
+                <li><a href="listpage.html" target="_balck"> Home Decor</a></li>
+                <li><a href="listpage.html" target="_balck"> Grooming Decor</a></li>
+                <li><a href="listpage.html" target="_balck"> Candles</a></li>
+                <li><a href="listpage.html" target="_balck"> Toys & Games</a></li>
+                <li><a href="listpage.html" target="_balck"> Signature Box</a></li>
+                <li><a href="listpage.html" target="_balck"> Ballon Decoreation</a></li>
+                <li><a href="listpage.html" target="_balck"> Other</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">For Him</li>
+                <li><a href="listpage.html" target="_balck">Him</a></li>
+                <li><a href="listpage.html" target="_balck"> Boyfriend </a></li>
+                <li><a href="listpage.html" target="_balck"> Husband </a></li>
+                <li><a href="listpage.html" target="_balck">Father</a></li>
+                <li><a href="listpage.html" target="_balck"> Brother </a></li>
+                <li><a href="listpage.html" target="_balck"> Boys </a></li>
+                <li><a href="listpage.html" target="_balck"> Friends </a></li>
+                <li><a href="listpage.html" target="_balck"> Parents</a></li>
+                <li><a href="listpage.html" target="_balck"> Grandparents</a></li>
+                <li><a href="listpage.html" target="_balck"> Kids</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">For Her</li>
+                <li><a href="listpage.html" target="_balck">Her </a></li>
+                <li><a href="listpage.html" target="_balck"> Girlfriend </a></li>
+                <li><a href="listpage.html" target="_balck"> Wife </a></li>
+                <li><a href="listpage.html" target="_balck">Mother</a></li>
+                <li><a href="listpage.html" target="_balck"> Sister </a></li>
+                <li><a href="listpage.html" target="_balck"> Doughter </a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Gift Cities</li>
+                <li><a href="listpage.html" target="_balck">Banglore </a></li>
+                <li><a href="listpage.html" target="_balck"> Channai </a></li>
+                <li><a href="listpage.html" target="_balck"> Delhi </a></li>
+                <li><a href="listpage.html" target="_balck">Gurgaon</a></li>
+                <li><a href="listpage.html" target="_balck"> Hyderabad </a></li>
+                <li><a href="listpage.html" target="_balck"> Kolkata </a></li>
+                <li><a href="listpage.html" target="_balck"> Mumbai </a></li>
+                <li><a href="listpage.html" target="_balck"> Pune </a></li>
+                <li><a href="listpage.html" target="_balck"> All 200+ Cities </a></li>
+              </ul>
+            </li>
+
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Flavour</li>
+                <li><a href="listpage.html" target="_balck">Best Selling </a></li>
+                <li><a href="listpage.html" target="_balck"> Oreo Cake </a></li>
+                <li><a href="listpage.html" target="_balck"> Walnut </a></li>
+                <li><a href="listpage.html" target="_balck">Rasmalai</a></li>
+                <li><a href="listpage.html" target="_balck"> Kit Kat Cakes </a></li>
+                <li><a href="listpage.html" target="_balck"> Gulab jamun Cake </a></li>
+                <li><a href="listpage.html" target="_balck"> BlueBerry </a></li>
+                <li><a href="listpage.html" target="_balck"> Vanilla Cakes </a></li>
+                <li><a href="listpage.html" target="_balck">Death By choco </a></li>
+                <li><a href="listpage.html" target="_balck">Cappuccino </a></li>
+                <li><a href="listpage.html" target="_balck">Triple Queen  </a></li>
+                <li><a href="listpage.html" target="_balck"> Choco Chip </a></li>
+                <li><a href="listpage.html" target="_balck"> Mixed Fruit </a></li>
+                <li><a href="listpage.html" target="_balck"> Rocky Road </a></li>
+                <li><a href="listpage.html" target="_balck">Ferrero Rocher</a></li>
+                <li><a href="listpage.html" target="_balck">Black Currant  </a></li>
+                <li><a href="listpage.html" target="_balck">Honey Almond</a></li>
+                <li><a href="listpage.html" target="_balck">Chocolate Truffle</a></li>
+                <li><a href="listpage.html" target="_balck"> Caramel</a></li>
+                <li><a href="listpage.html" target="_balck">White Forest</a></li>
+                <li><a href="listpage.html" target="_balck">Mango</a></li>
+                <li><a href="listpage.html" target="_balck"> Exotic cakes</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- gift dropdown end -->
+        <!-- anniversary dropdown start herev  -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sweets
+          </a>
+          <ul class="dropdown-menu Sweet_dropdown  row">
+            <li class="col-lg-2 col-xs-4">
+              <ul class="scroll">
+                <li class="dropdown-main_heading">Type Sweets </li>
+                <li><a href="./components/plants.html" target="_balck">All Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Best Selling</a></li>
+                <li><a href="./components/pllants.html" target="_balck">Dry Fruits Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Ghee Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Milk Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Bengali Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Barfi</a></li>
+                <li><a href="./components/plants.html" target="_balck">Kaju Kati</a></li>
+                <li><a href="./components/plants.html" target="_balck">Peda</a></li>
+                <li><a href="./components/plants.html" target="_balck">Special Own Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Gulab Jamun</a></li>
+                <li><a href="./components/plants.html" target="_balck">Rasgulla</a></li>
+                <li><a href="./components/plants.html" target="_balck">Baklava</a></li>
+                <li><a href="./components/plants.html" target="_balck">Gujiya</a></li>
+                <li><a href="./components/plants.html" target="_balck">Petha</a></li>
+                <li><a href="./components/plants.html" target="_balck">Halwas</a></li>
+                <li><a href="./components/lplants.html" target="_balck">Special Laddu</a></li>
+                <li><a href="./components/plants.html" target="_balck">Soan Papdi</a></li>
+                <li><a href="./components/plants.html" target="_balck">Ghevar</a></li>
+                <li><a href="./components/plants.html" target="_balck">Besan Laddoo</a></li>
+                <li><a href="./components/plants.html" target="_balck">Tinned Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Traditional Sweets</a></li>
+                <li><a href="./components/plants.html" target="_balck">Sondesh Sweets</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Savories</li>
+                <li><a href="./components/plants.html" target="_balck">Dalmoth</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Namkeen </a></li>
+                <li><a href="./components/plants.html" target="_balck">Mixture </a></li>
+                <li><a href="./components/plants.html" target="_balck">Kaju Namkeen</a></li>
+                <li><a href="./components/plants.html" target="_balck">Mathri & Samos</a></li>
+                <li><a href="./components/plants.html" target="_balck">Sev</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Cookies</a></li>
+                <li><a href="./components/plants.html" target="_balck">Muruku</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Chips</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Makhana</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Chiwda</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Bhakarwadi</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Dry Fruits </li>
+                <li><a href="listpage.html" target="_balck">All Dry Fruits</a></li>
+                <li><a href="listpage.html" target="_balck">Best Selling  </a></li>
+                <li><a href="listpage.html" target="_balck"> Almond </a></li>
+                <li><a href="listpage.html" target="_balck"> Cashew</a></li>
+                <li><a href="listpage.html" target="_balck">Pistachio</a></li>
+                <li><a href="listpage.html" target="_balck"> Walnut </a></li>
+                <li><a href="listpage.html" target="_balck">Apricot</a></li>
+                <li><a href="listpage.html" target="_balck"> Anjeer/ Fig</a></li>
+                <li><a href="listpage.html" target="_balck">Raisin/ Kishmish</a></li>
+                <li><a href="listpage.html" target="_balck"> Prunes</a></li>
+                <li><a href="listpage.html" target="_balck"> Seeds</a></li>
+                <li><a href="listpage.html" target="_balck"> Cherries/ Berries</a></li>
+                <li><a href="listpage.html" target="_balck"> Cherries/ Berries</a></li>
+                <li><a href="listpage.html" target="_balck">Choco Dry Fruits</a></li>
+                <li><a href="listpage.html" target="_balck">Dates </a></li>
+                <li><a href="listpage.html" target="_balck">Nuts </a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Price</li>
+                <li><a href="listpage.html" target="_balck">Under 399</a></li>
+                <li><a href="listpage.html" target="_balck"> 399 To 699 </a></li>
+                <li><a href="listpage.html" target="_balck"> 699 To 999 </a></li>
+                <li><a href="listpage.html" target="_balck"> Above 999</a></li>
+                <li><a href="listpage.html" target="_balck"> Premium Plants </a></li>
+                <li><a href="listpage.html" target="_balck"> Best Seller</a></li>
+                <li><a href="listpage.html" target="_balck"> Best Seller</a></li>
+                <li><a href="listpage.html" target="_balck"> New Arrivals</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Occasion</li>
+                <li><a href="./components/birthday.html" target="_balck">Birthday</a></li>
+                <li><a href="./components/anniversary.html" target="_balck"> Anniversary </a></li>
+                <li><a href="listpage.html" target="_balck">Christmas </a></li>
+                <li><a href="listpage.html" target="_balck"> New Year</a></li>
+                <li><a href="listpage.html" target="_balck"> Valentine </a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Plants Cities</li>
+                <li><a href="listpage.html" target="_balck">Delhi</a></li>
+                <li><a href="listpage.html" target="_balck"> Gurgaon </a></li>
+                <li><a href="listpage.html" target="_balck">Noida </a></li>
+                <li><a href="listpage.html" target="_balck"> All 200+ Cities</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+
+
+          <!-- anniversary dropdown end   -->
+          <!-- personalised dropdown start -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chocolate
+          </a>
+          <ul class="dropdown-menu Personalised_dropdown  row">
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Type</li>
+                <li><a href="listpage.html" target="_balck">Under 600</a></li>
+                <li><a href="listpage.html" target="_balck">600 To 699</a></li>
+                <li><a href="listpage.html" target="_balck">Above 1000</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Types</li>
+                <li><a href="listpage.html" target="_balck">All Gifts</a></li>
+                <li><a href="./components/pillows.html" target="_balck"> Cushions & Pillows </a></li>
+                <li><a href="listpage.html" target="_balck"> Same Day Personalised</a></li>
+                <li><a href="/components/keychain.html" target="_balck">Keychains</a></li>
+                <li><a href="listpage.html" target="_balck"> Mugs </a></li>
+                <li><a href="./components/photoframe.html" target="_balck"> Photo Frames</a></li>
+                <li><a href="listpage.html" target="_balck"> Photo Lamps</a></li>
+                <li><a href="./components/plants.html" target="_balck"> Plants</a></li>
+                <li><a href="listpage.html" target="_balck"> Accessories</a></li>
+                <li><a href="listpage.html" target="_balck"> Engraved Gifts</a></li>
+                <li><a href="listpage.html" target="_balck"> Passport Covers</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">More Gifts</li>
+                <li><a href="listpage.html" target="_balck">Bestseller Gifts</a></li>
+                <li><a href="listpage.html" target="_balck">Champagne Glasses </a></li>
+                <li><a href="listpage.html" target="_balck"> Beer Glasses </a></li>
+                <li><a href="listpage.html" target="_balck">Shot Glasses</a></li>
+                <li><a href="listpage.html" target="_balck"> Bar Accessories </a></li>
+                <li><a href="listpage.html" target="_balck"> Personalised Chocolates</a></li>
+                <li><a href="listpage.html" target="_balck"> Personalised Clock</a></li>
+                <li><a href="listpage.html" target="_balck"> Pencil Carving Gifts</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-3 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">Digital</li>
+                <li><a href="listpage.html" target="_balck">All Gifts</a></li>
+                <li><a href="listpage.html" target="_balck">Gutar On Call </a></li>
+                <li><a href="listpage.html" target="_balck"> Digital Posters </a></li>
+                <li><a href="listpage.html" target="_balck">Singer On Call</a></li>
+                <li><a href="listpage.html" target="_balck"> Caricatures </a></li>
+                <li><a href="listpage.html" target="_balck"> E-Greeting Cards</a></li>
+                <li><a href="listpage.html" target="_balck">Piano On Call</a></li>
+                <li><a href="listpage.html" target="_balck"> Beauticain On Call</a></li>
+                <li><a href="listpage.html" target="_balck"> Flute On Call</a></li>
+                <li><a href="listpage.html" target="_balck"> Personalised App Games</a></li>
+                <li><a href="listpage.html" target="_balck"> Saxophone On Call</a></li>
+                <li><a href="listpage.html" target="_balck"> Video Message</a></li>
+                <li><a href="listpage.html" target="_balck"> Personalised Celebrity Massage</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2 col-xs-4">
+              <ul>
+                <li class="dropdown-main_heading">By Relation</li>
+                <li><a href="listpage.html" target="_balck">Her</a></li>
+                <li><a href="listpage.html" target="_balck">Him </a></li>
+                <li><a href="listpage.html" target="_balck"> Boyfriend </a></li>
+                <li><a href="listpage.html" target="_balck">Girlfriend</a></li>
+                <li><a href="listpage.html" target="_balck"> Father </a></li>
+                <li><a href="listpage.html" target="_balck"> Mother</a></li>
+                <li><a href="listpage.html" target="_balck">Wife</a></li>
+                <li><a href="listpage.html" target="_balck"> Husband</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- personalised dropdown end -->
+
+          <!-- Anniversary dropdown start   -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gifts
+          </a>
+          <ul class="dropdown-menu Anniversary_dropdown  row">
+            <li class="col-lg-6 col-xs-6">
+              <ul>
+                <li class="dropdown-main_heading">By Type</li>
+                <li><a href="listpage.html" target="_balck">All Gifts</a></li>
+                <li><a href="listpage.html" target="_balck">Flowers</a></li>
+                <li><a href="listpage.html" target="_balck">Same Day Personalised</a></li>
+                <li><a href="listpage.html" target="_balck">Cakes</a></li>
+                <li><a href="listpage.html" target="_balck">Photo Cakes</a></li>
+                <li><a href="listpage.html" target="_balck">Personalised Gifts</a></li>
+                <li><a href="listpage.html" target="_balck">Greeting Gifts</a></li>
+                <li><a href="listpage.html" target="_balck">Combos</a></li>
+                <li><a href="./components/plants.html" target="_balck">Plants</a></li>
+                <li><a href="./components/chocolates.html" target="_balck">Chocolate Bauquet</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-6 col-xs-6">
+              <ul>
+                <li class="dropdown-main_heading">By Relation</li>
+                <li><a href="listpage.html" target="_balck">Husband</a></li>
+                <li><a href="listpage.html" target="_balck"> Parents </a></li>
+                <li><a href="listpage.html" target="_balck">Wife</a></li>
+                <li><a href="listpage.html" target="_balck">Her</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Anniversary dropdown end   -->
+
+
+        <!-- Birthday dropdown Start   -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Event
+          </a>
+          <ul class="dropdown-menu Birthday_dropdown  row">
+            <li class="col-lg-6 col-xs-6">
+              <ul>
+                <li class="dropdown-main_heading">By Type</li>
+                <li><a href="listpage.html" target="_balck">All Gifts</a></li>
+                <li><a href="listpage.html" target="_balck">Same Day Personalised</a></li>
+                <li><a href="./components/flowes.html" target="_balck">Flowers</a></li>
+                <li><a href="listpage.html" target="_balck">Photo Cakes</a></li>
+                <li><a href="./components/cake.html" target="_balck">Cakes</a></li>
+                <li><a href="listpage.html" target="_balck">Mugs</a></li>
+                <li><a href="listpage.html" target="_balck">Combos</a></li>
+                <li><a href="./components/plants.html" target="_balck">Plants</a></li>
+                <li><a href="listpage.html" target="_balck">Chocolate Bauquet</a></li>
+                <li><a href="listpage.html" target="_balck">Personalised Gifts</a></li>
+
+              </ul>
+            </li>
+            <li class="col-lg-6 col-xs-6">
+              <ul>
+                <li class="dropdown-main_heading">By Relation</li>
+                <li><a href="listpage.html" target="_balck">Boyfriend</a></li>
+                <li><a href="listpage.html" target="_balck"> Brother </a></li>
+                <li><a href="listpage.html" target="_balck">Father</a></li>
+                <li><a href="listpage.html" target="_balck">Father</a></li>
+                <li><a href="listpage.html" target="_balck">Friend</a></li>
+                <li><a href="listpage.html" target="_balck">GirlFriend</a></li>
+                <li><a href="listpage.html" target="_balck">Husband</a></li>
+                <li><a href="listpage.html" target="_balck">Sister</a></li>
+                <li><a href="listpage.html" target="_balck">Wife</a></li>
+                <li><a href="listpage.html" target="_balck">Her</a></li>
+                <li><a href="listpage.html" target="_balck">Him</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Birthday dropdown end   -->
+        <!-- Birthday dropdown Start   -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Fresh
+          </a>
+          <ul class="dropdown-menu Occasions_dropdown  row">
+            <li class="col-lg-6 col-xs-6">
+              <ul>
+                <li class="dropdown-main_heading">Festivals</li>
+                <li><a href="listpage.html" target="_balck">Janmashtami</a></li>
+                <li><a href="listpage.html" target="_balck">Holi</a></li>
+                <li><a href="listpage.html" target="_balck">Rakhi</a></li>
+                <li><a href="listpage.html" target="_balck">Navratri</a></li>
+                <li><a href="listpage.html" target="_balck">Dussehra</a></li>
+                <li><a href="listpage.html" target="_balck">Karwa Chauth</a></li>
+                <li><a href="listpage.html" target="_balck">Bhai Dhooj</a></li>
+
+              </ul>
+            </li>
+            <li class="col-lg-6 col-xs-6">
+              <ul>
+                <li class="dropdown-main_heading">Special Occcasions</li>
+                <li><a href="listpage.html" target="_balck">Children's Day-14th Nov</a></li>
+                <li><a href="listpage.html" target="_balck"> Christmas </a></li>
+                <li><a href="listpage.html" target="_balck">New Year</a></li>
+                <li><a href="listpage.html" target="_balck">Women's Day</a></li>
+                <li><a href="listpage.html" target="_balck">April Fool</a></li>
+                <li><a href="listpage.html" target="_balck">Mothers Day</a></li>
+                <li><a href="listpage.html" target="_balck">Father's Day</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Birthday dropdown end   -->
+        <!-- Corporate dropdown Start   -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Fashion
+          </a>
+          <ul class="dropdown-menu Corporate_dropdown  row">
+            <li class="col-lg-12 col-xs-12">
+              <ul>
+                <li class="dropdown-main_heading">Type</li>
+                <li><a href="listpage.html" target="_balck">Corporate Gifts</a></li>
+                <li><a href="listpage.html" target="_balck">Corporate New Year</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+        <!-- Corporate dropdown end   -->
+        <!-- Corporate dropdown Start   -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Electronics
+          </a>
+          <ul class="dropdown-menu International_dropdown  row" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft>>
+            <li class=" col-lg-12 col-xs-12">
+            <ul>
+              <li class="dropdown-main_heading">Overseas Gifts</li>
+              <li><a href="listpage.html" target="_balck">USA</a></li>
+              <li><a href="listpage.html" target="_balck">Australia</a></li>
+              <li><a href="listpage.html" target="_balck">Canada</a></li>
+
+            </ul>
+        </li>
+      </ul>
+      </li>
+      <!-- Corporate dropdown end   -->
+      <!-- Corporate dropdown Start   -->
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Toys
+        </a>
+        <ul class="dropdown-menu International_dropdown  row" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft>>
+              <li class=" col-lg-12 col-xs-12">
+          <ul>
+            <li class="dropdown-main_heading">Overseas Gifts</li>
+            <li><a href="listpage.html" target="_balck">USA</a></li>
+            <li><a href="listpage.html" target="_balck">Australia</a></li>
+            <li><a href="listpage.html" target="_balck">Canada</a></li>
+
+          </ul>
+      </li>
+      </ul>
+      </li>
+      <!-- Corporate dropdown end   -->
+      <!-- Corporate dropdown Start   -->
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Books
+        </a>
+        <ul class="dropdown-menu International_dropdown  row" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft>>
+            <li class=" col-lg-12 col-xs-12">
+          <ul>
+            <li class="dropdown-main_heading">Overseas Gifts</li>
+            <li><a href="listpage.html" target="_balck">USA</a></li>
+            <li><a href="listpage.html" target="_balck">Australia</a></li>
+            <li><a href="listpage.html" target="_balck">Canada</a></li>
+
+          </ul>
+      </li>
+      </ul>
+      </li>
+      <!-- Corporate dropdown end   -->
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- product category -->
+  <section id="aa-product-details">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-product-details-area">
+            <div class="aa-product-details-content">
+              <div class="row">
+                <!-- Modal view slider -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="aa-product-view-slider">
+
+                    <div id="demo-1" class="simpleLens-gallery-container">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div class="simpleLens-thumbnails-container"
+                            style="flex-direction: column-reverse; display: flex; grid-gap:20px">
+                            <a data-big-image="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              data-lens-image="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              class="simpleLens-thumbnail-wrapper" href="#">
+                              <img
+                                src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </a>
+                            <a data-big-image="https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              data-lens-image="https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              class="simpleLens-thumbnail-wrapper" href="#">
+                              <img
+                                src="https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </a>
+                            <a data-big-image="https://images.pexels.com/photos/136255/pexels-photo-136255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              data-lens-image="https://images.pexels.com/photos/136255/pexels-photo-136255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              class="simpleLens-thumbnail-wrapper" href="#">
+                              <img
+                                src="https://images.pexels.com/photos/136255/pexels-photo-136255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </a>
+                            <a data-big-image="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              data-lens-image="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                              class="simpleLens-thumbnail-wrapper" href="#">
+                              <img
+                                src="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-10">
+                          <div class="simpleLens-container">
+                            <div class="simpleLens-big-image-container"><a
+                                data-lens-image="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="simpleLens-lens-image"><img
+                                  src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                  class="simpleLens-big-image"></a></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal view content -->
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="aa-product-view-content">
+                    <div class="top_title_heading">
+                      <h3>Black Forest Cake</h3>
+                    </div>
+                    <div class="rating_review">
+                      <div class="star_rating">
+                        <i class="fa fa-star" aria-hidden="true"> <span>4.7</span></i>
+                        <a href="#">450 review </a>
+                      </div>
+                    </div>
+                    <div class="product_text">
+                      <p>Product Contains</p>
+                      <h5> <span><i class="fa fa-circle" aria-hidden="true"></i></span> Black Forest Cake</h5>
+                    </div>
+                    <div class="aa-price-block">
+                      <span class="aa-product-view-price">Rs 579 </span>
+                      <span class="aa-product-cut-price"> <s>Rs 679 </s> </span>
+                      <span class="aa-product-price-offer">(16% OFF)</span>
+                    </div>
+                    <div class="price-show-offer">
+                      <p>Or Pay Only,Rs474 + <span>75</span></p>
+                      <span> <a href="#">Login </a>to redeem Reward points</span>
+                    </div>
+                    <div class="offer-text">
+                      <p>Offers</p>
+                      <h5>price-show-offer</h5>
+                      <h5>Get 50 Points on Sign in.</h5>
+                    </div>
+                    <div class="">
+                      <hr>
+                    </div>
+                    <div class="product-quentity">
+                      <h5>Weight</h5>
+                      <div class="aa-prod-view-size">
+                        <a href="#">0.5kg</a>
+                        <a href="#">1kg</a>
+                        <a href="#">2kg</a>
+                        <a href="#">3kg</a>
+                        <a href="#">4kg</a>
+                      </div>
+                    </div>
+
+                    <div class="check-input">
+                      <input type="checkbox">
+                      <p>Make it eggless @ Rs 50</p>
+                    </div>
+                    <div class="massage-on-product">
+                      <p>Message on cake</p>
+                      <input type="text" placeholder="Massage On Cake">
+                      <p>Maximum limit :- 20 characters</p>
+                    </div>
+                    <div class="choose-location-input">
+                      <input type="text" placeholder="Noida" name="" id="">
+                      <p>Awesome we deliver to this location</p>
+                    </div>
+
+                    <div class="order-within">
+                      <p> <span> <i class="fa fa-truck" aria-hidden="true"></i> </span> Earliest Delivery <span
+                          class="text-info"> Tomorrow </span></p>
+                    </div>
+
+                    <div class="buy-button">
+                      <button class="btn btn-danger">BUY NOW</button>
+                    </div>
+                    <div class="next_delivery_time">
+                      <p>Next Available Free slot* for Today , 9AM-12PM</p>
+                      <p>*You can find more slots and special midnight delivery slot on checkout page</p>
+                    </div>
+                    <div class="safty-text-icon container">
+                      <div class="row">
+                        <div class="col-md-2">One Time Free Delivery</div>
+                        <div class="col-md-2">100% Safe & Secure Payments</div>
+                        <div class="col-md-2">7 Million Smiles Delivered</div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <hr>
+                    </div>
+                    <!-- more buy card  -->
+                    <div class="more_speclial_cart">
+                      <div class="">
+                        <h6>Make this gift extra special</h6>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2">.col-md-4</div>
+                        <div class="col-md-2">.col-md-4</div>
+                        <div class="col-md-2">.col-md-4</div>
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <hr>
+                    </div>
+                    <!-- more buy card end -->
+
+                    <!-- description start here -->
+                    <div class="description">
+                      <div class="main-description">
+                        <h2>Description</h2>
+                      </div>
+                      <div class="list-description">
+                        <h5>Made with Fresh Whipped Cream and blends of Chocolate, Blackforest is the most sought-after
+                          cake flavour, and the all-time favorite of almost everyone. Send this freshly baked delicacy
+                          to your loved ones today. Suitable for Birthday, Anniversaries, and more occasions, etc.</h5>
+
+                        <p>Caring Tips</p>
+                        <ul>
+                          <li>Keep the box upright on the table.</li>
+                          <li> Keep it away from direct sunlight.</li>
+                          <li>Store it in a cool place.</li>
+                          <li> Cover the leftover cake, then refrigerate.</li>
+                          <li>The cake should be consumed within 24 hours.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="sku-number">
+                      <p>SKU Number</p>
+                      <p>CAKE1004</p>
+                    </div>
+
+                    <div class="node-pad-input" disabled>
+                      <p>Note</p>
+                      <input type="text" class="form-control" name="" id=""
+                        placeholder="The icing, design of the cake may vary from the image depending upon local availability."
+                        readonly>
+
+                    </div>
+
+
+                    <!-- end right side  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <!--=========================================== Tab panes ===========================-->
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- ====================================== -->
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- / product category -->
+
+
+
+   <!-- review image starting here -->
+   <section class="">
+    <div class="container-fluid">
+        <div class="review">
+            <div class="review_main_heading">
+                <h2>Review & Ratings for Best Seller All</h2>
+            </div>
+
+            <div class="col-section">
+                <div class="main">
+                  
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                            <div class="review_card">
+                              <div class="review_post_image">
+                                <img src="https://images.pexels.com/photos/709785/pexels-photo-709785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                              </div>
+                                <div class="top_pannel">
+                                    <h5>Prefect</h5>
+
+                                    <div class="star_corner">
+                                        <div class="star_icon">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="recommended">
+                                            <p>recommended</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p>Prefect</p>
+                                    <!-- ---------------   -->
+                                </div>
+                                <div class="review_heading">
+                                    <p><span>Product: </span>purple orchild bouquet</p>
+                                    <p> <span>Occasion:</span> Birthday</p>
+                                    <p> <span>Date: </span> 19th nov 2020</p>
+                                </div>
+                                <div class="name">
+                                    <h4>anumpan</h4>
+                                    <p>location</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 2nd  -->
+                        <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                            <div class="review_card">
+                                <div class="top_pannel">
+                                    <h5>Prefect</h5>
+
+                                    <div class="star_corner">
+                                        <div class="star_icon">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="recommended">
+                                            <p>recommended</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p>Prefect</p>
+                                    <!-- ---------------   -->
+                                </div>
+                                <div class="review_heading">
+                                    <p><span>Product: </span>purple orchild bouquet</p>
+                                    <p> <span>Occasion:</span> Birthday</p>
+                                    <p> <span>Date: </span> 19th nov 2020</p>
+                                </div>
+                                <div class="name">
+                                    <h4>anumpan</h4>
+                                    <p>location</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- 3rd seciton -->
+                        <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                            <div class="review_card">
+                                <div class="top_pannel">
+                                  <div class="review_post_image">
+                                    <img src="https://images.pexels.com/photos/709785/pexels-photo-709785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                  </div>
+                                    <h5>Prefect</h5>
+
+                                    <div class="star_corner">
+                                        <div class="star_icon">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="recommended">
+                                            <p>recommended</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p>Prefect</p>
+                                    <!-- ---------------   -->
+                                </div>
+                                <div class="review_heading">
+                                    <p><span>Product: </span>purple orchild bouquet</p>
+                                    <p> <span>Occasion:</span> Birthday</p>
+                                    <p> <span>Date: </span> 19th nov 2020</p>
+                                </div>
+                                <div class="name">
+                                    <h4>anumpan</h4>
+                                    <p>location</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 4th section -->
+                        <div class="col-sm-12 col-md-6 col-lg-3 spacing_top">
+                            <div class="review_card">
+                                <div class="top_pannel">
+                                
+                                    <h5>Prefect</h5>
+
+                                    <div class="star_corner">
+                                        <div class="star_icon">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="recommended">
+                                            <p>recommended</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p>Prefect</p>
+                                    <!-- ---------------   -->
+                                </div>
+                                <div class="review_heading">
+                                    <p><span>Product: </span>purple orchild bouquet</p>
+                                    <p> <span>Occasion:</span> Birthday</p>
+                                    <p> <span>Date: </span> 19th nov 2020</p>
+                                </div>
+                                <div class="name">
+                                    <h4>anumpan</h4>
+                                    <p>location</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- col end   -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="button_review">
+        <button class="btn"> Load More..</button>
+    </div>
+
+</section>
+
+<!-- image starting here -->
+
+  <!-- / Subscribe section -->
+
+  <!-- footer -->
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-top-area">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <h3>Main Menu</h3>
+                    <ul class="aa-footer-nav">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Our Services</a></li>
+                      <li><a href="#">Our Products</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Knowledge Base</h3>
+                      <ul class="aa-footer-nav">
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Discount</a></li>
+                        <li><a href="#">Special Offer</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Useful Links</h3>
+                      <ul class="aa-footer-nav">
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Suppliers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="aa-footer-widget">
+                    <div class="aa-footer-widget">
+                      <h3>Contact Us</h3>
+                      <address>
+                        <p> 25 Astor Pl, NY 10003, USA</p>
+                        <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
+                        <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
+                      </address>
+                      <div class="aa-footer-social">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-bottom -->
+    <div class="aa-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-footer-bottom-area">
+              <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+              <div class="aa-footer-payment">
+                <span class="fa fa-cc-mastercard"></span>
+                <span class="fa fa-cc-visa"></span>
+                <span class="fa fa-paypal"></span>
+                <span class="fa fa-cc-discover"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer -->
+  <!-- Login Modal -->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4>Login or Register</h4>
+          <form class="aa-login-form" action="">
+            <label for="">Username or Email address<span>*</span></label>
+            <input type="text" placeholder="Username or email">
+            <label for="">Password<span>*</span></label>
+            <input type="password" placeholder="Password">
+            <button class="aa-browse-btn" type="submit">Login</button>
+            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
+            <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+            <div class="aa-register-now">
+              Don't have an account?<a href="account.html">Register now!</a>
+            </div>
+          </form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
+  <!-- To Slider JS -->
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>
+  <!-- Product view slider -->
+  <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+  <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script>
+  <script src="js/zoom.js"></script>
+  <script>
+    // disable right click to inspect
+    // document.addEventListener('contextmenu', event => event.preventDefault());own.innerHTML = "Right click disabled on image";
+</script>
+</body>
+
+</html>

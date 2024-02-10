@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/comp-css/cakemart.css">
+    <link rel="stylesheet" href="css/comp-css/productpage.css">
+
+    <!-- bs icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <title>Hello, world!</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+        :root {
+            --gray: darkcyan;
+        }
+
+        * {
+            font-family: "Lato", sans-serif;
+        }
+
+        h3,
+        h4 {
+            color: black;
+        }
+
+        .card {
+            box-shadow: 0px 0px 12px 0px rgba(73, 73, 73, 0.75);
+            background-color: rgb(255, 255, 255);
+            transition: 0.5s ease;
+            border-radius: 10px;
+        }
+
+        .img_slider img {
+            border-radius: 10px;
+        }
+
+
+        .product_cake_heading {
+            color: rgb(68, 68, 68);
+            padding: 10px 20px;
+        }
+
+
+        .product_cake_heading h3 {
+            margin: 0;
+        }
+
+
+        .card:hover {
+            box-shadow: 5px 5px 12px -7px rgba(255, 255, 255, 1);
+            -webkit-box-shadow: 5px 5px 12px -7px rgba(255, 255, 255, 1);
+            -moz-box-shadow: 5px 5px 12px -7px rgba(255, 255, 255, 1);
+            cursor: pointer;
+
+        }
+
+        .img_slider {
+            padding: 5px;
+        }
+
+        /* ---------------------------- */
+        .delivery_nav {
+            color: #fff;
+            float: left;
+            border-radius: 30px;
+            padding: 5px 12px;
+            font-size: 18px;
+            border: 1px solid white;
+            margin-top: 7px;
+
+        }
+
+
+        .rating_mart {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .rating_mart .rate p {
+            background-color: green;
+            padding: 3px 10px;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        .product_title_text p {
+            font-weight: 400;
+            font-size: 1.4rem;
+            color: gray;
+        }
+
+        .product_cake_heading .rating_mart .time,
+        .product_cake_heading .rating_mart .price {
+            color: gray;
+
+        }
+
+        .product_cake_heading .coupons_section p span {
+            color: gray;
+            font-weight: 400;
+            padding-left: 10px;
+        }
+
+        /* product order button  */
+
+        .order_button {
+            background-color: #03A9DD;
+            width: 70%;
+            border-radius: 20px;
+
+        }
+
+        .coupons_section {
+            margin-top: 1rem;
+        }
+
+        .order_button a {
+            color: #fff;
+        }
+
+        .center-div {
+            text-align: -webkit-center;
+            text-align: center;
+        }
+
+        .product_cake_heading .share_item .bi-share-fill {
+            position: absolute;
+            top: 2%;
+            right: 7%;
+            background: white;
+            padding: 6px 8px;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+
+        .top-cake-header {
+            clear: both;
+            justify-content: space-between;
+            display: flex;
+            margin: 2rem 0;
+        }
+
+
+        .text-white {
+            color: #fff;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        /* product order button  end */
+        /* ================================================== */
+        .dropdown-menu li a:hover {
+            background-color: black;
+        }
+
+        .button-row {
+            clear: both;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 75px;
+            margin-top: 2rem;
+
+        }
+
+        .butoncontainer {
+            width: 680px;
+            /* background-color: coral; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 5px;
+            margin-left: 15px;
+        }
+
+        /* dropdown css  */
+        .dropbtn-cake {
+            background-color: #fff;
+            color: #1e90ff;
+            padding: 1px 16px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border: 2px solid #1e90ff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropbtn-cake:focus {
+            outline: none;
+        }
+
+        .dropbtn-cake>img {
+            margin: 5px 5px;
+            width: 18px;
+        }
+
+        .downarr>img {
+            margin-top: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content>a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none !important;
+            display: block;
+            background: white;
+        }
+
+        .dropdown-btn-cake:hover {
+            background-color: #fff;
+        }
+
+
+
+
+
+
+
+
+        .mybuttons {
+            background-color: #fff;
+            border: 2px solid #1e90ff;
+            color: #1e90ff;
+            padding: 3px 16px;
+            text-align: center;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .mybuttons:focus {
+            outline: none;
+        }
+
+        #mysearch {
+            background: #f5f5f5;
+            width: 280px;
+            height: 38px;
+            box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .MyOffers select {
+            border: 2px solid #1e90ff;
+            color: #1e90ff;
+            padding: 3px 16px;
+            text-align: center;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .search_restaurant .input-group-addon {
+            padding: 6px 12px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background-color: #fff;
+            border: none;
+            border-radius: 20px 0 0 20px;
+
+        }
+
+        .search_restaurant [type="text"] {
+            border: 0;
+            background-color: #fff;
+            border-radius: 0 20px 20px 0;
+        }
+
+
+        @media (max-width: 575.98px) {
+            .card {
+                background-color: transparent;
+            }
+
+            h4,
+            h3,
+            p {
+                color: white;
+            }
+
+            .img_slider {
+                margin-top: 23rem !important;
+            }
+
+            .spacing_top {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================================
+        cake   navbar end 
+        =================================== -->
+    <nav class="navbar navbar-inverse" style="clear: both;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="delivery_nav " href="#">Delivery </a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="#">Pickup</a>
+
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ASAP
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="width: 2rem;">
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#"> lorem </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Location
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="width: 2rem;">
+                        <li><a href="#">Noida</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#"> Pune </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin:10px">
+                <button class="btn btn-danger"><i class="bi bi-cart-plus-fill"></i> 0</button>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <form class="form-inline my-2 my-lg-0 search_restaurant" style=" padding: 8px 8px;">
+                    <div class="input-group">
+                        <span class="input-group-addon " id="basic-addon1"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search for Restaurants"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </form>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <!-- ================================
+        cake   navbar end 
+        =================================== -->
+
+    <!-- second header  -->
+    <section class="Miniheader">
+        <div class="inner-listing">
+            <ul class=" breadcrumb">
+                <li class="list"><a href="#">Home &nbsp;</a></li>
+                <li class="list"><a href="#">Bangalore &nbsp;</a></li>
+                <li class="list"><a href="#">Mumbai &nbsp;</a></li>
+                <li class="list"><a href="#">Cakemart &nbsp;</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- second header end  -->
+
+    <section id="product_page">
+
+        <div class="main-product">
+            <div class="left-product">
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <div class="container-fluid">
+                            <!-- first row  -->
+                            <div class="row">
+                                <div class="col-sm-12 ">
+                                    <!-- Category -->
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h3>Category</h3>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <form class="form-inline my-2 my-lg-0 search_restaurant"
+                                                style=" padding: 8px 8px;">
+                                                <div class="input-group" style="border-bottom: 1px solid #727171">
+                                                    <span class="input-group-addon " id="basic-addon1"><i
+                                                            class="bi bi-search"></i></span>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Search for Restaurants"
+                                                        aria-describedby="basic-addon1">
+                                                </div>
+                                            </form>
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="text-more">
+                                                <p>2345 More</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- first row end -->
+
+                                <!-- Second  row  -->
+
+                                <div class="col-sm-12 col-md-12">
+                                    <!-- Category -->
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h3>Brands</h3>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <form class="form-inline my-2 my-lg-0 search_restaurant"
+                                                style=" padding: 8px 8px;">
+                                                <div class="input-group" style="border-bottom: 1px solid #727171">
+                                                    <span class="input-group-addon " id="basic-addon1"><i
+                                                            class="bi bi-search"></i></span>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Search for Restaurants"
+                                                        aria-describedby="basic-addon1">
+                                                </div>
+                                            </form>
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cake (10)</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- second row end -->
+                                <!-- third  row  -->
+
+                                <div class="col-sm-12 ">
+                                    <!-- Category -->
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h3>Rating</h3>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- third row end -->
+                                <!-- third  row  -->
+
+                                <div class="col-sm-12 col-md-12  ">
+                                    <!-- Category -->
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h3>Price Range</h3>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p>Rs 0</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="">
+                                                <input type="text" name="" id="">
+                                            </div>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+
+                                <!-- third row end -->
+
+                                <!-- Forth  row  -->
+
+                                <div class="col-sm-12 col-md-12  ">
+                                    <!-- Category -->
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h3>Cake Type</h3>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Eggless</label>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Non-Eggless</label>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <!-- forth row end -->
+
+
+                                <!-- fifth section  row  -->
+
+                                <div class="col-sm-12 col-md-12  ">
+                                    <!-- Category -->
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h3>Offers</h3>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">10% off</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">20% off</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">30% off</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">70% off</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--fifth section end -->
+
+                                <!-- row end  -->
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- ==============  right side section start here  =================================================== -->
+
+                    <div class="col-md-9 col-lg-9 ">
+                        <div class="right-side-items">
+                            <div class="right-cake-products">
+                                <!-- top section start =======================-->
+                                <div class="catDishDetails ">
+                                    <div class="row CatGrDCutm">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="catBigImag_container">
+                                                <img src="img/product/productmycake.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="catProdtName_container">
+                                                        <p>Full Cake Name Title</p>
+                                                        <span>Aman Bakery</span><br>
+                                                        <a><i class="fa fa-star" aria-hidden="true"></i> 34 mins₹ 400 for two</a>
+                                                        <div class="CatLocatioN" onclick="myFunction()">
+
+                                                            <span>Benglore Ashok nagar |
+                                                                change Outlet</span><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="DeliveryTime">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="raTingSec">
+                                                                        <p class="myrating"><i class="bi bi-star-fill"></i> 4.3
+                                                                        </p>
+                                                                        <p>To Few Ratings</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="raTingSec">
+                                                                        <p>29 mins</p>
+                                                                        <p>Delivery Time</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="raTingSec">
+                                                                        <p>Rs 699</p>
+                                                                        <p>Cost of cake</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                       
+                                                      
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+
+                                                    <div class="catOffEr">
+                                                        <a><i class="bi bi-bag-check-fill"></i><span >40%
+                                                                off up to ₹80 | Use code
+                                                                TRYNEW</span></a><br>
+                                                        <a><i class="bi bi-bag-check-fill"></i><span>15%
+                                                                off up to ₹100 | Use 100SBI ₹400 off</span></a>
+                                                        <span>Offers</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="ProductSearchcheck">
+                                                <form class="form-inline my-2 my-lg-0">
+                                                    <div class="content-Super">
+                                                        <i class="bi bi-search"></i>
+                                                        <input style="border: none;" type="text" class="field" placeholder="Search for Restaurants">
+                                                    </div>
+                                                </form>
+                                                <div class="checkveg">
+                                                    <input type="checkbox" id="vehicle3">
+                                                    <span style="margin-left: 2px;" >Veg Only</span>
+                                                </div>
+                                                <div class="FavIconsCat">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    <span style="margin-left: 2px;">Favourite</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- =================================================== -->
+                                <div class="container" style="color: #fff;">
+                                    <h3 style="font-size: 2rem; font-weight: 600;color: #fff;">Fullmenu</h3>
+                                    <p>12:00 am - 11:29 pm</p>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="product-title-name">
+                                        <h3>Combo Meals</h3>
+                                    </div>
+                                    <div class="bg-white">
+                                        <div class="row">
+                                            <!-- first section  -->
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="product-img-box">
+                                                    <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                    <div class="">
+                                                        <h3>Rs 799</h3>
+                                                        <p>classic cakes with Pinaple and Butterscotch</p>
+                                                    </div>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                                        <div class="product-plus-icon">
+                                                            <i class="bi bi-plus-lg"></i>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <!-- first section  -->
+
+                                            <!-- 2ns section  -->
+
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="product-img-box">
+                                                    <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                    <div class="">
+                                                        <h3>Rs 799</h3>
+                                                        <p>classic cakes with Pinaple and Butterscotch</p>
+                                                    </div>
+                                                    <a href="#">
+                                                        <div class="product-plus-icon">
+                                                            <i class="bi bi-plus-lg"></i>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <!-- 2ns section  -->
+
+
+                                            <!-- 3rd section  -->
+
+
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="product-img-box">
+                                                    <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                    <div class="">
+                                                        <h3>Rs 799</h3>
+                                                        <p>classic cakes with Pinaple and Butterscotch</p>
+                                                    </div>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                                        <div class="product-plus-icon">
+                                                            <i class="bi bi-plus-lg"></i>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <!-- 3rd section  -->
+
+
+                                            <!-- 4th section  -->
+
+                                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                                <div class="product-img-box">
+                                                    <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                    <div class="">
+                                                        <h3>Rs 799</h3>
+                                                        <p>classic cakes with Pinaple and Butterscotch</p>
+                                                    </div>
+                                                    <a href="#" data-toggle="modal" data-target="#myModal">
+                                                        <div class="product-plus-icon">
+                                                            <i class="bi bi-plus-lg"></i>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <!-- 4th section  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- =================================== 2nd cake row   ============================== -->
+                            <div class="right-side-items">
+                                <div class="right-cake-products">
+                                    <div class="container-fluid">
+                                        <br>
+                                        <div class="bg-white">
+                                            <div class="row">
+                                                <!-- first section  -->
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- first section  -->
+
+                                                <!-- 2ns section  -->
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 2ns section  -->
+
+
+                                                <!-- 3rd section  -->
+
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 3rd section  -->
+
+
+                                                <!-- 4th section  -->
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 4th section  -->
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- ================================ -->
+
+                                        <!-- =================== -->
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- =================================== 2nd cake row end   ============================== -->
+                            <!-- =================================== 3nd cake row   ============================== -->
+                            <div class="right-side-items">
+                                <div class="right-cake-products">
+                                    <div class="container-fluid">
+                                        <div class="product-title-name">
+                                            <h3>Combo Meals</h3>
+                                        </div>
+                                        <div class="bg-white">
+                                            <div class="row">
+                                                <!-- first section  -->
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- first section  -->
+
+                                                <!-- 2ns section  -->
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 2ns section  -->
+
+
+                                                <!-- 3rd section  -->
+
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 3rd section  -->
+
+
+                                                <!-- 4th section  -->
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 4th section  -->
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- ================================ -->
+
+                                        <!-- =================== -->
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- next line 3rd section  -->
+                            <div class="right-side-items">
+                                <div class="right-cake-products">
+                                    <div class="container-fluid">
+                                        <br>
+                                        <div class="bg-white">
+                                            <div class="row">
+                                                <!-- first section  -->
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- first section  -->
+
+                                                <!-- 2ns section  -->
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 2ns section  -->
+
+
+                                                <!-- 3rd section  -->
+
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 3rd section  -->
+
+
+                                                <!-- 4th section  -->
+
+                                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="product-img-box">
+                                                        <img src="	https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                        <div class="">
+                                                            <h3>Rs 799</h3>
+                                                            <p>classic cakes with Pinaple and Butterscotch</p>
+                                                        </div>
+                                                        <a href="#" data-toggle="modal" data-target="#myModal">
+                                                            <div class="product-plus-icon">
+                                                                <i class="bi bi-plus-lg"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- 4th section  -->
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- ================================ -->
+
+                                        <!-- =================== -->
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- =================================== 3nd cake row end   ============================== -->
+
+                        </div>
+
+                        <!-- ==============================================right side section end  ============================================= -->
+                    </div>
+
+
+                    <!-- -===========================
+                        Modal 
+                        =====================-->
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog ">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <div class="main-modal">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="modal-image">
+                                                    <img src="https://cakemart.xyz/images/cake5.jpg" alt="">
+                                                </div>
+                                                <div class="heading">
+                                                    <h2 class="cake-pera-modal">classic Pineapple flavour cakes (1KG)
+                                                    </h2>
+                                                    <p>RS 899</p>
+                                                    <span>Sold by ManishMart</span>
+
+                                                    <p>Extra instructions</p>
+                                                    <textarea style="width: 100%; height: 100px; "
+                                                        placeholder="Add any special requests"></textarea>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4">
+                                            <div class="count">
+                                                <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                                <input type="text" placeholder="1X">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        <button type="button" class="btn addToCard-modal">Add to Cart</button>
+
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- -===========================
+                        Modal 
+                        =====================-->
+
+
+    </section>
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="js/custom.js"></script>
+    <script>
+   // disable right click to inspect
+   document.addEventListener('contextmenu', event => event.preventDefault()); own.innerHTML = "Right click disabled on image";
+    </script>
+
+</body>
+
+</html>
+
+
+
