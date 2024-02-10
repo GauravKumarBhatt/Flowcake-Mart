@@ -25,4 +25,4 @@
 
 ## link
 
-https://github.com/GrvBhatt/Flowcake-Mart.git
+https://github.com/GauravKumarBhatt/Flowcake-Mart
